@@ -3,6 +3,7 @@ module.exports = {
         res.render('index.ejs')
     },
     getProfile: (req,res) => {
-        res.render('profile.ejs')
+        console.log(req.user)
+        res.render('profile.ejs', {user: req.user})
     }
 }
