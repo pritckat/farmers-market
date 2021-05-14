@@ -1,3 +1,3 @@
 # farmers-market
 
-also for people
+also for people and plants
