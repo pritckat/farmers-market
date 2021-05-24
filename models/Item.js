@@ -10,3 +10,5 @@ const ItemSchema = new mongoose.Schema({
         ref: "Store"
     },
   })
+
+  module.exports = mongoose.model('Item', ItemSchema)
