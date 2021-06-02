@@ -1,5 +1,5 @@
 module.exports = {
-    getStore: (req,res) => {
-        res.render('store.ejs')
+    getStores: (req,res) => {
+        res.render('stores.ejs')
     },
 }
