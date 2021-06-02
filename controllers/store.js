@@ -12,7 +12,7 @@ module.exports = {
                 user: req.user._id,
             })
             console.log('Store created')
-            res.render('store', {store: store})
+            res.redirect(`/stores/${store._id}`)
         }catch(err){
             console.log(err)
         }
