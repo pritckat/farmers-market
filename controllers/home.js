@@ -8,5 +8,8 @@ module.exports = {
     },
     getProfile: (req,res) => {
         res.render('profile.ejs', {user: req.user})
-    }
+    },
+    getMain: (req,res) => {
+        res.render('main.ejs')
+    },
 }
