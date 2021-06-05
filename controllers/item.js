@@ -24,5 +24,8 @@ module.exports = {
     },
     deleteItem: async (req,res) => {
         
+    },
+    updateItem: async (req,res) => {
+        
     }
 }
