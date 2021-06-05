@@ -22,4 +22,7 @@ module.exports = {
             console.log(err)
         }
     },
+    deleteItem: async (req,res) => {
+        
+    }
 }
