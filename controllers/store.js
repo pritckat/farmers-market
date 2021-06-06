@@ -25,4 +25,9 @@ module.exports = {
             console.log(err)
         }
     },
+    updateStore: async (req,res) => {
+        try {
+
+        }
+    },
 }
