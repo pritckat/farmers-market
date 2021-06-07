@@ -28,6 +28,6 @@ module.exports = {
     updateStore: async (req,res) => {
         try {
 
-        }
+        }catch(err){}
     },
 }
