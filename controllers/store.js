@@ -30,4 +30,7 @@ module.exports = {
 
         }catch(err){}
     },
+    deleteStore: async (req,res) => {
+        
+    }
 }
