@@ -28,9 +28,15 @@ module.exports = {
     updateStore: async (req,res) => {
         try {
 
-        }catch(err){}
+        }catch(err){
+            console.log(ErrorEvent)
+        }
     },
     deleteStore: async (req,res) => {
-        
-    }
+        try{
+
+        }catch(err){
+            console.log(err)
+        }
+    },
 }
