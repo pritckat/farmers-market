@@ -23,9 +23,17 @@ module.exports = {
         }
     },
     deleteItem: async (req,res) => {
-        
+        try {
+            
+        } catch (error) {
+            
+        }
     },
     updateItem: async (req,res) => {
-        
+        try {
+            
+        } catch (error) {
+            
+        }
     }
 }
