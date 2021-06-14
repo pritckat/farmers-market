@@ -32,7 +32,11 @@ module.exports = {
     },
     updateItem: async (req,res) => {
         try {
-            
+            const item = await Item.findOneAndUpdate({_id: req.params.id},
+                {name: req.body.name,
+                    cost: req.body.cost
+                })
+            res.redirect(`/stores/${item.store}/items/${item._id}`)
         } catch (error) {
             
         }

@@ -4,7 +4,7 @@
     <p>$<%=item.cost%></p>
 </container>
 <container class="updateItem">
-    <form method="POST" action="#">
+    <form method="POST" action="<%=`./${item._id}/updateItem`%>">
         <input type="text" name="name" placeholder="<%=item.name%>">
         <!-- <input type="text" name="count" placeholder="Stock"> -->
         <input type="text" name="cost" placeholder="<%=item.cost%>">

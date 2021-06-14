@@ -9,4 +9,5 @@ router.get('/:id', storeController.getStore)
 router.post('/createStore', storeController.createStore)
 router.post('/:id/createItem', itemController.createItem)
 router.get('/:id/items/:id', itemController.getItem)
+router.post('/:id/items/:id/updateItem', itemController.updateItem)
 module.exports = router
