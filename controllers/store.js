@@ -1,8 +1,9 @@
 const Store = require("../models/store")
 
 module.exports = {
-    getStores: (req,res) => {
-        res.render('stores.ejs')
+    getStores: async (req,res) => {
+        const stores = await Store.find()
+        res.render('stores.ejs', {stores: stores})
     },
     createStore: async (req,res) => {
         try{
