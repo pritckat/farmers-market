@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-
+const Item = require('./Item')
 const CartSchema = new mongoose.Schema({
 
     user: {
@@ -7,7 +7,7 @@ const CartSchema = new mongoose.Schema({
         ref: "User",
       },
     items: {
-        type: Array,
+        type: Item,
 
     },
   })
