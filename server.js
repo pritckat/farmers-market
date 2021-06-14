@@ -9,7 +9,7 @@ const connectDB = require('./config/database')
 const mainRoutes = require('./routes/main')
 const storeRoutes = require('./routes/store')
 const itemRoutes = require('./routes/item')
-const flash = require('connect-flash')
+const flash = require('express-flash')
 
 require('dotenv').config({path: './config/.env'})
 
