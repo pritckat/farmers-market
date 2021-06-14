@@ -8,3 +8,8 @@
     <input type="text" name="cost" placeholder="Cost">
     <input type="submit">
 </form>
+
+<h2>Store Items</h2>
+<% for (item of items) { %>
+    <a href="./<%= store._id %>/items/<%= item._id %>"><li> <%= item.name %></li></a>
+<% } %>

@@ -1,4 +1,5 @@
 const Store = require("../models/store")
+const Item = require("../models/item")
 
 module.exports = {
     getStores: async (req,res) => {
@@ -21,7 +22,9 @@ module.exports = {
     getStore: async (req,res) => {
         try {
             const store = await Store.findOne({_id: req.params.id})
-            res.render('store', {store: store})
+            const items = await Item.find({store: store._id})
+            console.log(items)
+            res.render('store', {store: store, items: items})
         }catch(err){
             console.log(err)
         }
