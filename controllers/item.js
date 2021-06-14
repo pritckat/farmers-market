@@ -1,8 +1,9 @@
 const Item = require('../models/item')
 
 module.exports = {
-    getItem: (req,res) => {
-        res.render('item.ejs')
+    getItem: async (req,res) => {
+        const item = await Item.findOne({_id: req.params.id})
+        res.render('item.ejs', {item: item})
     },
     getItems: (req,res) => {
         res.render('items.ejs')

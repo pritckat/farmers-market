@@ -1,1 +1,17 @@
 <h1>Item Page</h1>
+<container class="showItem">
+    <h2><%=item.name%></h2>
+    <p>$<%=item.cost%></p>
+</container>
+<container class="updateItem">
+    <form method="POST" action="#">
+        <input type="text" name="name" placeholder="<%=item.name%>">
+        <!-- <input type="text" name="count" placeholder="Stock"> -->
+        <input type="text" name="cost" placeholder="<%=item.cost%>">
+        <input type="submit">
+    </form>
+</container>
+<ul>
+    <li><a href="#">Update Item</a></li>
+    <li><a href="#">Delete Item</a></li>
+</ul>
