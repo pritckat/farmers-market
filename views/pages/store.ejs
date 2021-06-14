@@ -11,5 +11,5 @@
 
 <h2>Store Items</h2>
 <% for (item of items) { %>
-    <a href="./<%= store._id %>/items/<%= item._id %>"><li> <%= item.name %></li></a>
+    <a href="/stores/<%=item.store%>/items/<%= item._id %>"><li> <%= item.name %></li></a>
 <% } %>

@@ -13,5 +13,7 @@
 </container>
 <ul>
     <li><a href="#">Update Item</a></li>
-    <li><a href="#">Delete Item</a></li>
+    <li><form method="POST" action="<%=`./${item._id}/deleteItem`%>">
+        <input type="submit" value="Delete">
+    </form>
 </ul>
