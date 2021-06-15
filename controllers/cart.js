@@ -11,5 +11,14 @@ module.exports = {
         } catch (error) {
             console.log(error)
         }
-    }
+    },
+    getProfile: (req,res) => {
+        console.log(req.session)
+        // console.log('user:', req.user)
+        try {
+            res.render('profile.ejs', {user: req.user})
+        } catch(error) {
+            console.log(error)
+        }
+    },
 }
