@@ -3,7 +3,7 @@
 <h2>List of All Stores</h2>
 
 <% for (store of stores) {%>
-    <li><a href="./<%= store._id %>"><%= store.name %> - <%= store.user %></a></li>
+    <li><a href="stores/<%= store._id %>"><%= store.name %> - <%= store.user %></a></li>
 <% } %>
 <h2>Create Your Store</h2>
 <form method="POST" action="/stores/createStore">
