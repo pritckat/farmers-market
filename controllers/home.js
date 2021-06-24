@@ -1,7 +1,7 @@
 module.exports = {
     getIndex: (req, res)=>{
         if (req.user) {
-            res.render('main.ejs')
+            res.render('main.ejs', user = req.user)
         } else {
             res.render('index.ejs')
         }
