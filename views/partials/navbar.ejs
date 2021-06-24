@@ -4,6 +4,6 @@
     <input type='submit' value='Search'>
 </form>
 <% if (user.store) { %>
-    <span>Store: <%=user.store%></span>
+    <a href="/stores/<%=user.store%>">My Store</a>
 <%}%>
 <a href="/logout">Log Out</a>
