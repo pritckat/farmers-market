@@ -1,5 +1,6 @@
 const Store = require("../models/store")
 const Item = require("../models/item")
+const User = require("../models/User")
 
 module.exports = {
     getStores: async (req,res) => {
@@ -8,11 +9,14 @@ module.exports = {
     },
     createStore: async (req,res) => {
         try{
-            console.log(req.body)
             const store = await Store.create({
                 name: req.body.name,
                 user: req.user._id,
             })
+            const user = await User.findOneAndUpdate(
+                {_id: req.user},
+                {store: store._id}
+                )
             console.log('Store created')
             res.redirect(`/stores/${store._id}`)
         }catch(err){

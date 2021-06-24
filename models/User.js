@@ -13,7 +13,7 @@ const UserSchema = new mongoose.Schema({
   password: String,
   store: {         
     type: mongoose.Schema.Types.ObjectId,
-    ref: "User",
+    ref: "Store",
     default: null,
   },
 })
