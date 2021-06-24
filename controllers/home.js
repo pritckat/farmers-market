@@ -1,6 +1,10 @@
 module.exports = {
-    getIndex: (request, response)=>{
-        response.render('index.ejs')
+    getIndex: (req, res)=>{
+        if (req.user) {
+            res.render('main.ejs')
+        } else {
+            res.render('index.ejs')
+        }
     },
 
     getMain: (req,res) => {
