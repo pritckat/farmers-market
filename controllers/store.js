@@ -5,7 +5,7 @@ const User = require("../models/User")
 module.exports = {
     getStores: async (req,res) => {
         const stores = await Store.find()
-        res.render('stores.ejs', {stores: stores})
+        res.render('stores.ejs', {stores: stores, user: req.user})
     },
     createStore: async (req,res) => {
         try{
@@ -28,7 +28,7 @@ module.exports = {
             const store = await Store.findOne({_id: req.params.id})
             const items = await Item.find({store: store._id})
             console.log(items)
-            res.render('store', {store: store, items: items})
+            res.render('store', {store: store, items: items, user:req.user})
         }catch(err){
             console.log(err)
         }
