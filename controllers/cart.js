@@ -8,8 +8,15 @@ module.exports = {
             const cart = await Cart.findOne({user: req.user.id})
             console.log(cart)
             res.render('cart.ejs', {cart: cart})
-        } catch (error) {
-            console.log(error)
+        } catch (err) {
+            console.log(err)
         }
     },
+    addToCart: async (req,res) => {
+        try {
+
+        } catch (err) {
+            console.log(err)
+        }
+    }
 }
