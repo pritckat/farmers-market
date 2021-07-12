@@ -18,5 +18,12 @@ module.exports = {
         } catch (err) {
             console.log(err)
         }
-    }
+    },
+    updateCart: async (req,res) => {
+        try {
+
+        } catch (err) {
+            console.log(err)
+        }
+    },
 }
