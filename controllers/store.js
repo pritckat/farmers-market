@@ -37,7 +37,7 @@ module.exports = {
         try {
 
         }catch(err){
-            console.log(ErrorEvent)
+            console.log(err)
         }
     },
     deleteStore: async (req,res) => {
