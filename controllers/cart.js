@@ -26,4 +26,11 @@ module.exports = {
             console.log(err)
         }
     },
+    removeFromCart: async (req,res) => {
+        try {
+            
+        } catch (err) {
+            console.log(err)
+        }
+    }
 }
