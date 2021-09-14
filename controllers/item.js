@@ -6,7 +6,8 @@ module.exports = {
         res.render('item.ejs', {item: item})
     },
     getItems: (req,res) => {
-        res.render('items.ejs')
+        console.log('hi', req.user)
+        res.render('items.ejs', {user: req.user._id})
     },
     createItem: async (req,res) => {
         try{
