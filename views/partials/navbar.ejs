@@ -1,5 +1,4 @@
 <span>Hello, <%=user.userName%></span>
-<a>Logo</a>
 <form>
     <input type='text'>
     <input type='submit' value='Search'>
@@ -7,4 +6,6 @@
 <% if (user.store) { %>
     <a href="/stores/<%=user.store%>">My Store</a>
 <%}%>
+<a href="/stores">Stores</a>
+<a href="/items">Items</a>
 <a href="/logout">Log Out</a>
