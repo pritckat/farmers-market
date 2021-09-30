@@ -6,10 +6,10 @@ const CartSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: "User",
       },
-    // items: {
-    //     type: Item,
-
-    // },
+    items: {
+        type: Array,
+        
+    },
   })
 
   module.exports = mongoose.model('Cart', CartSchema)
